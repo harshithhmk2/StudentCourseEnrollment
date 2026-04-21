@@ -1,0 +1,515 @@
+2026-03-31 09:43:30.716 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-31 09:43:31.053 +05:30 [INF] Now listening on: http://localhost:5133
+2026-03-31 09:43:31.130 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-31 09:43:31.132 +05:30 [INF] Hosting environment: Development
+2026-03-31 09:43:31.134 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-03-31 09:43:36.225 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-03-31 09:43:36.899 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 138.0365 ms
+2026-03-31 09:43:36.909 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 700.7271ms
+2026-03-31 09:43:36.957 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-03-31 09:43:36.957 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-31 09:43:36.969 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 11.8186ms
+2026-03-31 09:43:37.143 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 186.106ms
+2026-03-31 09:43:37.318 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-03-31 09:43:37.338 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 13.9441 ms
+2026-03-31 09:43:37.342 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.0316ms
+2026-03-31 09:44:26.345 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/register - application/json 96
+2026-03-31 09:44:26.491 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-03-31 09:44:26.525 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentManagement.DTO.RegisterReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-03-31 09:44:27.926 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Register (StudentManagement) in 1389.525ms
+2026-03-31 09:44:28.010 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-03-31 09:44:28.183 +05:30 [ERR] HTTP POST /auth/register responded 500 in 1829.1067 ms
+System.InvalidOperationException: The entity type 'User' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateNonNullPrimaryKeys(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at StudentManagement.Services.AuthService.Register(RegisterReqst req) in D:\DotNet_workspace\StudentManagement\StudentManagement\Services\AuthService.cs:line 32
+   at StudentManagement.Controllers.AuthController.Register(RegisterReqst user) in D:\DotNet_workspace\StudentManagement\StudentManagement\Controllers\AuthController.cs:line 23
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-03-31 09:44:28.364 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The entity type 'User' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateNonNullPrimaryKeys(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at StudentManagement.Services.AuthService.Register(RegisterReqst req) in D:\DotNet_workspace\StudentManagement\StudentManagement\Services\AuthService.cs:line 32
+   at StudentManagement.Controllers.AuthController.Register(RegisterReqst user) in D:\DotNet_workspace\StudentManagement\StudentManagement\Controllers\AuthController.cs:line 23
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-31 09:44:28.413 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/register - 500 null text/plain; charset=utf-8 2067.7785ms
+2026-03-31 10:17:32.341 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-31 10:17:32.426 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-31 10:17:32.433 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-31 10:17:32.513 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2026-03-31 10:17:32.518 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-31 10:17:32.524 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-31 10:17:32.539 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-03-31 10:17:32.556 +05:30 [INF] Applying migration '20260331042211_InitialCreate'.
+2026-03-31 10:17:32.582 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Students] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [City] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Students] PRIMARY KEY ([Id])
+);
+2026-03-31 10:17:32.588 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Id] int NOT NULL IDENTITY,
+    [Username] nvarchar(max) NOT NULL,
+    [Password] nvarchar(max) NOT NULL,
+    [Role] nvarchar(max) NOT NULL,
+    [Department] nvarchar(max) NOT NULL,
+    [RefreshToken] nvarchar(max) NULL,
+    [RefreshTokenExpiry] datetime2 NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Id])
+);
+2026-03-31 10:17:32.596 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260331042211_InitialCreate', N'8.0.0');
+2026-03-31 10:18:29.839 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-31 10:18:30.123 +05:30 [INF] Now listening on: http://localhost:5133
+2026-03-31 10:18:30.179 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-31 10:18:30.182 +05:30 [INF] Hosting environment: Development
+2026-03-31 10:18:30.184 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-03-31 10:18:31.635 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-03-31 10:18:32.040 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 168.5990 ms
+2026-03-31 10:18:32.051 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 428.1538ms
+2026-03-31 10:18:32.142 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-31 10:18:32.154 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 12.7233ms
+2026-03-31 10:18:32.174 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-03-31 10:18:32.246 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.938ms
+2026-03-31 10:18:32.402 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-03-31 10:18:32.433 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 22.3870 ms
+2026-03-31 10:18:32.438 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.8081ms
+2026-03-31 10:18:55.193 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/register - application/json 96
+2026-03-31 10:18:55.355 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-03-31 10:18:55.392 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentManagement.DTO.RegisterReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-03-31 10:18:57.626 +05:30 [INF] Executed DbCommand (63ms) [Parameters=[@__req_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @__req_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-31 10:18:58.473 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Department], [Password], [RefreshToken], [RefreshTokenExpiry], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-03-31 10:18:58.524 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-03-31 10:18:58.535 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Register (StudentManagement) in 3129.6203ms
+2026-03-31 10:18:58.541 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-03-31 10:18:58.545 +05:30 [INF] HTTP POST /auth/register responded 200 in 3343.7045 ms
+2026-03-31 10:18:58.564 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/register - 200 null text/plain; charset=utf-8 3371.363ms
+2026-03-31 10:19:13.537 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/login - application/json 50
+2026-03-31 10:19:13.547 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-03-31 10:19:13.553 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagement.DTO.LoginReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-03-31 10:19:13.657 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__user_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Department], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0
+2026-03-31 10:19:14.198 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-31 10:19:14.212 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Login (StudentManagement) in 652.425ms
+2026-03-31 10:19:14.216 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-03-31 10:19:14.220 +05:30 [INF] HTTP POST /auth/login responded 200 in 674.3580 ms
+2026-03-31 10:19:14.227 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/login - 200 null application/json; charset=utf-8 689.8258ms
+2026-03-31 10:19:43.905 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students - null null
+2026-03-31 10:19:43.985 +05:30 [INF] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=Department and Claim.Value is one of the following values: (IT)
+2026-03-31 10:19:43.992 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-03-31 10:19:43.997 +05:30 [INF] HTTP GET /students responded 403 in 81.8424 ms
+2026-03-31 10:19:44.006 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students - 403 0 null 106.8088ms
+2026-03-31 10:19:52.948 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/students - application/json 42
+2026-03-31 10:19:52.959 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.Post (StudentManagement)'
+2026-03-31 10:19:52.963 +05:30 [INF] Route matched with {action = "Post", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(StudentManagement.DTO.StudentCreateDto) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-03-31 10:19:53.059 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([City], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-03-31 10:19:53.066 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-03-31 10:19:53.070 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.Post (StudentManagement) in 103.497ms
+2026-03-31 10:19:53.074 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.Post (StudentManagement)'
+2026-03-31 10:19:53.077 +05:30 [INF] HTTP POST /students responded 200 in 121.8280 ms
+2026-03-31 10:19:53.080 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/students - 200 null text/plain; charset=utf-8 132.5362ms
+2026-03-31 10:20:33.771 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/students - application/json 42
+2026-03-31 10:20:33.783 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.Post (StudentManagement)'
+2026-03-31 10:20:33.786 +05:30 [INF] Route matched with {action = "Post", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(StudentManagement.DTO.StudentCreateDto) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-03-31 10:20:33.809 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([City], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-03-31 10:20:33.817 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-03-31 10:20:33.823 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.Post (StudentManagement) in 30.8091ms
+2026-03-31 10:20:33.828 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.Post (StudentManagement)'
+2026-03-31 10:20:33.832 +05:30 [INF] HTTP POST /students responded 200 in 50.7992 ms
+2026-03-31 10:20:33.838 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/students - 200 null text/plain; charset=utf-8 68.0472ms
+2026-03-31 10:20:48.356 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students/1 - null null
+2026-03-31 10:20:48.364 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.Get (StudentManagement)'
+2026-03-31 10:20:48.368 +05:30 [INF] Route matched with {action = "Get", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-03-31 10:20:48.431 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[City], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0
+2026-03-31 10:20:48.441 +05:30 [INF] Executing OkObjectResult, writing value of type 'StudentManagement.Models.Student'.
+2026-03-31 10:20:48.449 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.Get (StudentManagement) in 75.8867ms
+2026-03-31 10:20:48.454 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.Get (StudentManagement)'
+2026-03-31 10:20:48.458 +05:30 [INF] HTTP GET /students/1 responded 200 in 94.4316 ms
+2026-03-31 10:20:48.464 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students/1 - 200 null application/json; charset=utf-8 107.8946ms
+2026-03-31 10:21:02.676 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students/2 - null null
+2026-03-31 10:21:02.683 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.Get (StudentManagement)'
+2026-03-31 10:21:02.688 +05:30 [INF] Route matched with {action = "Get", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-03-31 10:21:02.699 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[City], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0
+2026-03-31 10:21:02.705 +05:30 [INF] Executing OkObjectResult, writing value of type 'StudentManagement.Models.Student'.
+2026-03-31 10:21:02.709 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.Get (StudentManagement) in 15.3674ms
+2026-03-31 10:21:02.712 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.Get (StudentManagement)'
+2026-03-31 10:21:02.714 +05:30 [INF] HTTP GET /students/2 responded 200 in 31.7415 ms
+2026-03-31 10:21:02.717 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students/2 - 200 null application/json; charset=utf-8 40.8453ms
+2026-03-31 10:21:23.857 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5133/students/1 - application/json 42
+2026-03-31 10:21:23.902 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.Put (StudentManagement)'
+2026-03-31 10:21:23.910 +05:30 [INF] Route matched with {action = "Put", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Put(Int32, StudentManagement.DTO.StudentUpdateDto) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-03-31 10:21:23.922 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[City], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0
+2026-03-31 10:21:23.939 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Students] SET [City] = @p0, [Name] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2026-03-31 10:21:23.954 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-31 10:21:23.957 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.Put (StudentManagement) in 42.9337ms
+2026-03-31 10:21:23.962 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.Put (StudentManagement)'
+2026-03-31 10:21:23.965 +05:30 [INF] HTTP PUT /students/1 responded 204 in 63.5578 ms
+2026-03-31 10:21:23.976 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5133/students/1 - 204 null null 119.1929ms
+2026-03-31 10:21:57.631 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5133/students/2 - null null
+2026-03-31 10:21:57.647 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-03-31 10:21:57.651 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-03-31 10:21:57.656 +05:30 [INF] HTTP DELETE /students/2 responded 403 in 10.7605 ms
+2026-03-31 10:21:57.663 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5133/students/2 - 403 0 null 31.4621ms
+2026-03-31 10:48:41.578 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-31 10:48:41.927 +05:30 [INF] Now listening on: http://localhost:5133
+2026-03-31 10:48:41.995 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-31 10:48:41.997 +05:30 [INF] Hosting environment: Development
+2026-03-31 10:48:41.999 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-03-31 10:48:42.687 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-03-31 10:48:43.129 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 166.9461 ms
+2026-03-31 10:48:43.140 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 462.7168ms
+2026-03-31 10:48:43.178 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-31 10:48:43.179 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-03-31 10:48:43.188 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 10.5129ms
+2026-03-31 10:48:43.241 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.1271ms
+2026-03-31 10:48:43.410 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-03-31 10:48:43.451 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 30.9614 ms
+2026-03-31 10:48:43.456 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 45.9177ms
+2026-03-31 10:49:44.423 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/register - application/json 99
+2026-03-31 10:49:44.560 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-03-31 10:49:44.586 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentManagement.DTO.RegisterReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-03-31 10:49:46.693 +05:30 [INF] Executed DbCommand (69ms) [Parameters=[@__req_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @__req_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-31 10:49:47.640 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Department], [Password], [RefreshToken], [RefreshTokenExpiry], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-03-31 10:49:47.692 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-03-31 10:49:47.703 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Register (StudentManagement) in 3105.9785ms
+2026-03-31 10:49:47.710 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-03-31 10:49:47.714 +05:30 [INF] HTTP POST /auth/register responded 200 in 3280.7748 ms
+2026-03-31 10:49:47.736 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/register - 200 null text/plain; charset=utf-8 3312.9229ms
+2026-03-31 10:50:18.322 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/login - application/json 58
+2026-03-31 10:50:18.340 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-03-31 10:50:18.345 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagement.DTO.LoginReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-03-31 10:50:18.467 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Department], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0
+2026-03-31 10:50:18.981 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-31 10:50:18.990 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Login (StudentManagement) in 638.9683ms
+2026-03-31 10:50:18.995 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-03-31 10:50:18.997 +05:30 [INF] HTTP POST /auth/login responded 200 in 659.8678 ms
+2026-03-31 10:50:19.002 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/login - 200 null application/json; charset=utf-8 680.428ms
+2026-03-31 10:50:43.074 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students - null null
+2026-03-31 10:50:43.169 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.GetAll (StudentManagement)'
+2026-03-31 10:50:43.176 +05:30 [INF] Route matched with {action = "GetAll", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-03-31 10:50:43.314 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[City], [s].[Name]
+FROM [Students] AS [s]
+2026-03-31 10:50:43.334 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagement.Models.Student, StudentManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-31 10:50:43.343 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.GetAll (StudentManagement) in 160.6962ms
+2026-03-31 10:50:43.355 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.GetAll (StudentManagement)'
+2026-03-31 10:50:43.358 +05:30 [INF] HTTP GET /students responded 200 in 275.3180 ms
+2026-03-31 10:50:43.364 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students - 200 null application/json; charset=utf-8 319.18ms
+2026-03-31 10:51:10.996 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/students - application/json 41
+2026-03-31 10:51:11.011 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.Post (StudentManagement)'
+2026-03-31 10:51:11.025 +05:30 [INF] Route matched with {action = "Post", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(StudentManagement.DTO.StudentCreateDto) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-03-31 10:51:11.051 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([City], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-03-31 10:51:11.063 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'null'.
+2026-03-31 10:51:11.095 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.Post (StudentManagement) in 63.602ms
+2026-03-31 10:51:11.101 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.Post (StudentManagement)'
+2026-03-31 10:51:11.105 +05:30 [INF] HTTP POST /students responded 201 in 96.0966 ms
+2026-03-31 10:51:11.112 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/students - 201 0 null 116.2092ms
+2026-03-31 10:53:03.810 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students/5 - null null
+2026-03-31 10:53:03.826 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.Get (StudentManagement)'
+2026-03-31 10:53:03.831 +05:30 [INF] Route matched with {action = "Get", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-03-31 10:53:03.891 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[City], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0
+2026-03-31 10:53:03.900 +05:30 [WRN] Student not found: 5
+2026-03-31 10:53:04.169 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.Get (StudentManagement) in 333.3932ms
+2026-03-31 10:53:04.272 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.Get (StudentManagement)'
+2026-03-31 10:53:04.419 +05:30 [ERR] Exception occurred
+StudentManagement.Exceptions.StudentNotFoundException: Student with id 5 not found
+   at StudentManagement.Services.StudentService.GetById(Int32 id) in D:\DotNet_workspace\StudentManagement\StudentManagement\Services\StudentService.cs:line 35
+   at StudentManagement.Controllers.StudentsController.Get(Int32 id) in D:\DotNet_workspace\StudentManagement\StudentManagement\Controllers\StudentsController.cs:line 35
+   at lambda_method132(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StudentManagement.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in D:\DotNet_workspace\StudentManagement\StudentManagement\Middleware\ExceptionMiddleware.cs:line 22
+2026-03-31 10:53:04.483 +05:30 [INF] HTTP GET /students/5 responded 404 in 659.3580 ms
+2026-03-31 10:53:04.490 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students/5 - 404 null application/json 680.4418ms
+2026-03-31 10:54:09.398 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5133/students/5 - application/json 42
+2026-03-31 10:54:09.411 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.Put (StudentManagement)'
+2026-03-31 10:54:09.415 +05:30 [INF] Route matched with {action = "Put", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Put(Int32, StudentManagement.DTO.StudentUpdateDto) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-03-31 10:54:09.445 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[City], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0
+2026-03-31 10:54:09.627 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.Put (StudentManagement) in 206.8438ms
+2026-03-31 10:54:09.698 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.Put (StudentManagement)'
+2026-03-31 10:54:09.819 +05:30 [ERR] Exception occurred
+StudentManagement.Exceptions.StudentNotFoundException: Student with id 5 not found
+   at StudentManagement.Services.StudentService.Update(Int32 id, StudentUpdateDto dto) in D:\DotNet_workspace\StudentManagement\StudentManagement\Services\StudentService.cs:line 57
+   at StudentManagement.Controllers.StudentsController.Put(Int32 id, StudentUpdateDto dto) in D:\DotNet_workspace\StudentManagement\StudentManagement\Controllers\StudentsController.cs:line 50
+   at lambda_method136(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StudentManagement.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in D:\DotNet_workspace\StudentManagement\StudentManagement\Middleware\ExceptionMiddleware.cs:line 22
+2026-03-31 10:54:09.834 +05:30 [INF] HTTP PUT /students/5 responded 404 in 423.7226 ms
+2026-03-31 10:54:09.841 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5133/students/5 - 404 null application/json 442.2225ms
+2026-03-31 10:54:50.677 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5133/students/1 - application/json 40
+2026-03-31 10:54:50.704 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.Put (StudentManagement)'
+2026-03-31 10:54:50.708 +05:30 [INF] Route matched with {action = "Put", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Put(Int32, StudentManagement.DTO.StudentUpdateDto) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-03-31 10:54:50.717 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[City], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0
+2026-03-31 10:54:50.734 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Students] SET [City] = @p0, [Name] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2026-03-31 10:54:50.748 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-31 10:54:50.752 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.Put (StudentManagement) in 38.7474ms
+2026-03-31 10:54:50.757 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.Put (StudentManagement)'
+2026-03-31 10:54:50.761 +05:30 [INF] HTTP PUT /students/1 responded 204 in 57.7324 ms
+2026-03-31 10:54:50.767 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5133/students/1 - 204 null null 89.9178ms
+2026-03-31 15:18:33.432 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-31 15:18:33.504 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-31 15:18:33.512 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-31 15:18:33.517 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-31 15:18:33.544 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-03-31 15:18:33.562 +05:30 [INF] No migrations were applied. The database is already up to date.

@@ -1,0 +1,770 @@
+2026-04-09 10:17:51.118 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-09 10:17:51.972 +05:30 [INF] Now listening on: http://localhost:5133
+2026-04-09 10:17:52.130 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-09 10:17:52.139 +05:30 [INF] Hosting environment: Development
+2026-04-09 10:17:52.142 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-04-09 10:18:00.155 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-04-09 10:18:00.706 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 159.7010 ms
+2026-04-09 10:18:00.718 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 574.1343ms
+2026-04-09 10:18:00.784 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-09 10:18:00.794 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 10.0453ms
+2026-04-09 10:18:00.867 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-04-09 10:18:00.983 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 115.3659ms
+2026-04-09 10:18:01.258 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-04-09 10:18:01.340 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 31.0091 ms
+2026-04-09 10:18:01.344 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 86.0189ms
+2026-04-09 10:18:53.682 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/register - application/json 93
+2026-04-09 10:18:53.922 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:18:53.982 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentManagement.DTO.RegisterReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 10:18:54.385 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Register (StudentManagement) in 385.6912ms
+2026-04-09 10:18:54.532 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:18:54.748 +05:30 [ERR] Exception occurred
+System.InvalidOperationException: Unable to resolve service for type 'StudentManagement.Services.IAuthService' while attempting to activate 'StudentManagement.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StudentManagement.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in D:\DotNet_workspace\StudentManagement\StudentManagement\Middleware\ExceptionMiddleware.cs:line 22
+2026-04-09 10:18:54.924 +05:30 [ERR] HTTP POST /auth/register responded 500 in 1225.4450 ms
+2026-04-09 10:18:54.934 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/register - 500 null application/json 1252.4018ms
+2026-04-09 10:21:16.657 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-09 10:21:17.013 +05:30 [INF] Now listening on: http://localhost:5133
+2026-04-09 10:21:17.112 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-09 10:21:17.114 +05:30 [INF] Hosting environment: Development
+2026-04-09 10:21:17.116 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-04-09 10:21:17.648 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-04-09 10:21:18.128 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 190.7925 ms
+2026-04-09 10:21:18.147 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 517.6991ms
+2026-04-09 10:21:18.222 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-09 10:21:18.224 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-04-09 10:21:18.238 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 16.3855ms
+2026-04-09 10:21:18.322 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.9301ms
+2026-04-09 10:21:18.528 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-04-09 10:21:18.566 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 23.3923 ms
+2026-04-09 10:21:18.574 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.7239ms
+2026-04-09 10:21:57.698 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/register - application/json 93
+2026-04-09 10:21:57.946 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:21:57.994 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentManagement.DTO.RegisterReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 10:21:58.831 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Register (StudentManagement) in 817.6553ms
+2026-04-09 10:21:58.951 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:21:59.121 +05:30 [ERR] Exception occurred
+System.Exception: User exists
+   at StudentManagement.Services.AuthService.Register(RegisterReqst req) in D:\DotNet_workspace\StudentManagement\StudentManagement\Services\AuthService.cs:line 33
+   at StudentManagement.Controllers.AuthController.Register(RegisterReqst user) in D:\DotNet_workspace\StudentManagement\StudentManagement\Controllers\AuthController.cs:line 23
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StudentManagement.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in D:\DotNet_workspace\StudentManagement\StudentManagement\Middleware\ExceptionMiddleware.cs:line 22
+2026-04-09 10:21:59.224 +05:30 [ERR] HTTP POST /auth/register responded 500 in 1509.7899 ms
+2026-04-09 10:21:59.240 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/register - 500 null application/json 1542.3502ms
+2026-04-09 10:29:16.088 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-09 10:29:16.404 +05:30 [INF] Now listening on: http://localhost:5133
+2026-04-09 10:29:16.469 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-09 10:29:16.471 +05:30 [INF] Hosting environment: Development
+2026-04-09 10:29:16.472 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-04-09 10:29:17.044 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-04-09 10:29:17.553 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 182.8200 ms
+2026-04-09 10:29:17.570 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 535.3437ms
+2026-04-09 10:29:17.627 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-09 10:29:17.629 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-04-09 10:29:17.638 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 11.1925ms
+2026-04-09 10:29:17.686 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.6206ms
+2026-04-09 10:29:17.791 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-04-09 10:29:17.816 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 17.4968 ms
+2026-04-09 10:29:17.822 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.3533ms
+2026-04-09 10:29:48.487 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/register - application/json 93
+2026-04-09 10:29:48.705 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:29:48.756 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentManagement.DTO.RegisterReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 10:29:49.608 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Register (StudentManagement) in 834.6524ms
+2026-04-09 10:29:49.734 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:29:49.925 +05:30 [ERR] Exception occurred
+System.Exception: User exists
+   at StudentManagement.Services.AuthService.Register(RegisterReqst req) in D:\DotNet_workspace\StudentManagement\StudentManagement\Services\AuthService.cs:line 33
+   at StudentManagement.Controllers.AuthController.Register(RegisterReqst user) in D:\DotNet_workspace\StudentManagement\StudentManagement\Controllers\AuthController.cs:line 23
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StudentManagement.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in D:\DotNet_workspace\StudentManagement\StudentManagement\Middleware\ExceptionMiddleware.cs:line 22
+2026-04-09 10:29:50.031 +05:30 [ERR] HTTP POST /auth/register responded 500 in 1532.9261 ms
+2026-04-09 10:29:50.041 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/register - 500 null application/json 1554.2837ms
+2026-04-09 10:32:42.266 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-09 10:32:42.582 +05:30 [INF] Now listening on: http://localhost:5133
+2026-04-09 10:32:42.653 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-09 10:32:42.656 +05:30 [INF] Hosting environment: Development
+2026-04-09 10:32:42.659 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-04-09 10:32:43.461 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-04-09 10:32:43.909 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 171.1473 ms
+2026-04-09 10:32:43.925 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 475.6784ms
+2026-04-09 10:32:43.976 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-09 10:32:43.978 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-04-09 10:32:43.994 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 18.3711ms
+2026-04-09 10:32:44.057 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.2126ms
+2026-04-09 10:32:44.148 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-04-09 10:32:44.172 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 14.9409 ms
+2026-04-09 10:32:44.182 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.798ms
+2026-04-09 10:33:22.630 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/register - application/json 95
+2026-04-09 10:33:22.866 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:33:22.916 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentManagement.DTO.RegisterReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 10:33:26.425 +05:30 [INF] Executed DbCommand (90ms) [Parameters=[@__req_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @__req_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-04-09 10:33:27.504 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-04-09 10:33:27.518 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Register (StudentManagement) in 4585.161ms
+2026-04-09 10:33:27.524 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:33:27.528 +05:30 [INF] HTTP POST /auth/register responded 200 in 4882.9549 ms
+2026-04-09 10:33:27.552 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/register - 200 null text/plain; charset=utf-8 4922.9199ms
+2026-04-09 10:34:10.587 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/register - application/json 95
+2026-04-09 10:34:10.604 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:34:10.610 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentManagement.DTO.RegisterReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 10:34:10.689 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__req_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @__req_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-04-09 10:34:11.356 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-04-09 10:34:11.364 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Register (StudentManagement) in 744.6133ms
+2026-04-09 10:34:11.371 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:34:11.376 +05:30 [INF] HTTP POST /auth/register responded 200 in 774.4736 ms
+2026-04-09 10:34:11.386 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/register - 200 null text/plain; charset=utf-8 798.7945ms
+2026-04-09 10:34:19.870 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/register - application/json 95
+2026-04-09 10:34:19.879 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:34:19.883 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentManagement.DTO.RegisterReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 10:34:20.047 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__req_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @__req_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-04-09 10:34:20.435 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-04-09 10:34:20.443 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Register (StudentManagement) in 553.7939ms
+2026-04-09 10:34:20.449 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:34:20.454 +05:30 [INF] HTTP POST /auth/register responded 200 in 577.3093 ms
+2026-04-09 10:34:20.463 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/register - 200 null text/plain; charset=utf-8 593.4807ms
+2026-04-09 10:41:55.230 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-09 10:41:55.532 +05:30 [INF] Now listening on: http://localhost:5133
+2026-04-09 10:41:55.609 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-09 10:41:55.614 +05:30 [INF] Hosting environment: Development
+2026-04-09 10:41:55.618 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-04-09 10:41:56.181 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-04-09 10:41:56.685 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 225.2334 ms
+2026-04-09 10:41:56.700 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 529.8588ms
+2026-04-09 10:41:56.742 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-09 10:41:56.745 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-04-09 10:41:56.755 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 13.7311ms
+2026-04-09 10:41:56.805 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.905ms
+2026-04-09 10:41:56.868 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-04-09 10:41:56.887 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 12.1606 ms
+2026-04-09 10:41:56.892 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.7758ms
+2026-04-09 10:42:04.568 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/register - application/json 96
+2026-04-09 10:42:04.830 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:42:04.888 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentManagement.DTO.RegisterReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 10:42:08.157 +05:30 [INF] Executed DbCommand (83ms) [Parameters=[@__req_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @__req_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-04-09 10:42:09.183 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-04-09 10:42:09.201 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Register (StudentManagement) in 4292.6775ms
+2026-04-09 10:42:09.208 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:42:09.213 +05:30 [INF] HTTP POST /auth/register responded 200 in 4629.8189 ms
+2026-04-09 10:42:09.242 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/register - 200 null text/plain; charset=utf-8 4675.0618ms
+2026-04-09 10:42:20.918 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/login - application/json 50
+2026-04-09 10:42:20.931 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-09 10:42:20.940 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagement.DTO.LoginReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 10:42:21.132 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__user_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Department], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0
+2026-04-09 10:42:21.575 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Login (StudentManagement) in 628.0638ms
+2026-04-09 10:42:21.717 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-09 10:42:21.918 +05:30 [ERR] Exception occurred
+System.Exception: Invalid credentials
+   at StudentManagement.Services.AuthService.Login(LoginReqst user) in D:\DotNet_workspace\StudentManagement\StudentManagement\Services\AuthService.cs:line 54
+   at StudentManagement.Controllers.AuthController.Login(LoginReqst user) in D:\DotNet_workspace\StudentManagement\StudentManagement\Controllers\AuthController.cs:line 29
+   at lambda_method10(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StudentManagement.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in D:\DotNet_workspace\StudentManagement\StudentManagement\Middleware\ExceptionMiddleware.cs:line 22
+2026-04-09 10:42:22.000 +05:30 [ERR] HTTP POST /auth/login responded 500 in 1071.8680 ms
+2026-04-09 10:42:22.010 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/login - 500 null application/json 1092.3315ms
+2026-04-09 10:48:43.974 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-09 10:48:44.302 +05:30 [INF] Now listening on: http://localhost:5133
+2026-04-09 10:48:44.541 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-09 10:48:44.543 +05:30 [INF] Hosting environment: Development
+2026-04-09 10:48:44.545 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-04-09 10:48:44.866 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-04-09 10:48:45.130 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 77.5647 ms
+2026-04-09 10:48:45.140 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 286.572ms
+2026-04-09 10:48:45.197 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-04-09 10:48:45.197 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-09 10:48:45.225 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 27.7373ms
+2026-04-09 10:48:45.286 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.0097ms
+2026-04-09 10:48:45.348 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-04-09 10:48:45.371 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 13.2196 ms
+2026-04-09 10:48:45.375 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.2864ms
+2026-04-09 10:49:33.158 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/register - application/json 93
+2026-04-09 10:49:33.249 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:49:33.277 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentManagement.DTO.RegisterReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 10:49:35.054 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[@__req_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @__req_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-04-09 10:49:35.634 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 255), @p2='?' (Size = 500), @p3='?' (DbType = DateTime2), @p4='?' (Size = 50), @p5='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Department], [Password], [RefreshToken], [RefreshTokenExpiry], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-04-09 10:49:35.669 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-04-09 10:49:35.677 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Register (StudentManagement) in 2390.074ms
+2026-04-09 10:49:35.680 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:49:35.684 +05:30 [INF] HTTP POST /auth/register responded 200 in 2515.8379 ms
+2026-04-09 10:49:35.696 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/register - 200 null text/plain; charset=utf-8 2537.5176ms
+2026-04-09 10:49:48.177 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/register - application/json 93
+2026-04-09 10:49:48.188 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:49:48.192 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentManagement.DTO.RegisterReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 10:49:48.216 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__req_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @__req_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-04-09 10:49:48.419 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Register (StudentManagement) in 222.8529ms
+2026-04-09 10:49:48.490 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 10:49:48.585 +05:30 [ERR] Exception occurred
+StudentManagement.Exceptions.UserAlreadyExistsException: User exists
+   at StudentManagement.Services.AuthService.Register(RegisterReqst req) in D:\DotNet_workspace\StudentManagement\StudentManagement\Services\AuthService.cs:line 34
+   at StudentManagement.Controllers.AuthController.Register(RegisterReqst user) in D:\DotNet_workspace\StudentManagement\StudentManagement\Controllers\AuthController.cs:line 23
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StudentManagement.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in D:\DotNet_workspace\StudentManagement\StudentManagement\Middleware\ExceptionMiddleware.cs:line 22
+2026-04-09 10:49:48.644 +05:30 [INF] HTTP POST /auth/register responded 400 in 457.6336 ms
+2026-04-09 10:49:48.651 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/register - 400 null application/json 474.0304ms
+2026-04-09 10:50:16.918 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/login - application/json 52
+2026-04-09 10:50:16.939 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-09 10:50:16.951 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagement.DTO.LoginReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 10:50:17.205 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__user_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Department], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0
+2026-04-09 10:50:18.038 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-09 10:50:18.053 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Login (StudentManagement) in 1093.0929ms
+2026-04-09 10:50:18.059 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-09 10:50:18.065 +05:30 [INF] HTTP POST /auth/login responded 200 in 1134.0562 ms
+2026-04-09 10:50:18.075 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/login - 200 null application/json; charset=utf-8 1156.8832ms
+2026-04-09 10:50:50.699 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students - null null
+2026-04-09 10:50:50.845 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.GetAll (StudentManagement)'
+2026-04-09 10:50:50.853 +05:30 [INF] Route matched with {action = "GetAll", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-04-09 10:50:50.899 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[StudentID], [s].[City], [s].[CreatedDate], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2026-04-09 10:50:50.945 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagement.Models.Student, StudentManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-09 10:50:50.975 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.GetAll (StudentManagement) in 114.5323ms
+2026-04-09 10:50:50.981 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.GetAll (StudentManagement)'
+2026-04-09 10:50:50.985 +05:30 [INF] HTTP GET /students responded 200 in 267.2908 ms
+2026-04-09 10:50:50.993 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students - 200 null application/json; charset=utf-8 293.7564ms
+2026-04-09 10:51:23.761 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students/1 - null null
+2026-04-09 10:51:23.791 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.Get (StudentManagement)'
+2026-04-09 10:51:23.809 +05:30 [INF] Route matched with {action = "Get", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-04-09 10:51:23.912 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[StudentID], [s].[City], [s].[CreatedDate], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[StudentID] = @__p_0
+2026-04-09 10:51:23.924 +05:30 [INF] Executing OkObjectResult, writing value of type 'StudentManagement.Models.Student'.
+2026-04-09 10:51:23.932 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.Get (StudentManagement) in 113.8053ms
+2026-04-09 10:51:23.939 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.Get (StudentManagement)'
+2026-04-09 10:51:23.943 +05:30 [INF] HTTP GET /students/1 responded 200 in 159.0766 ms
+2026-04-09 10:51:23.953 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students/1 - 200 null application/json; charset=utf-8 191.5336ms
+2026-04-09 10:51:31.136 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students/6 - null null
+2026-04-09 10:51:31.153 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.Get (StudentManagement)'
+2026-04-09 10:51:31.159 +05:30 [INF] Route matched with {action = "Get", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-04-09 10:51:31.177 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[StudentID], [s].[City], [s].[CreatedDate], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[StudentID] = @__p_0
+2026-04-09 10:51:31.188 +05:30 [INF] Executing OkObjectResult, writing value of type 'StudentManagement.Models.Student'.
+2026-04-09 10:51:31.195 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.Get (StudentManagement) in 28.1226ms
+2026-04-09 10:51:31.202 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.Get (StudentManagement)'
+2026-04-09 10:51:31.207 +05:30 [INF] HTTP GET /students/6 responded 200 in 59.6016 ms
+2026-04-09 10:51:31.217 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students/6 - 200 null application/json; charset=utf-8 81.4439ms
+2026-04-09 10:51:36.359 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students/9 - null null
+2026-04-09 10:51:36.374 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.Get (StudentManagement)'
+2026-04-09 10:51:36.376 +05:30 [INF] Route matched with {action = "Get", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-04-09 10:51:36.389 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[StudentID], [s].[City], [s].[CreatedDate], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[StudentID] = @__p_0
+2026-04-09 10:51:36.397 +05:30 [WRN] Student not found: 9
+2026-04-09 10:51:36.704 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.Get (StudentManagement) in 319.0102ms
+2026-04-09 10:51:36.834 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.Get (StudentManagement)'
+2026-04-09 10:51:37.018 +05:30 [ERR] Exception occurred
+StudentManagement.Exceptions.StudentNotFoundException: Student with id 9 not found
+   at StudentManagement.Services.StudentService.GetById(Int32 id) in D:\DotNet_workspace\StudentManagement\StudentManagement\Services\StudentService.cs:line 35
+   at StudentManagement.Controllers.StudentsController.Get(Int32 id) in D:\DotNet_workspace\StudentManagement\StudentManagement\Controllers\StudentsController.cs:line 35
+   at lambda_method131(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StudentManagement.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in D:\DotNet_workspace\StudentManagement\StudentManagement\Middleware\ExceptionMiddleware.cs:line 22
+2026-04-09 10:51:37.039 +05:30 [INF] HTTP GET /students/9 responded 404 in 665.5832 ms
+2026-04-09 10:51:37.049 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students/9 - 404 null application/json 690.033ms
+2026-04-09 11:58:49.111 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-09 11:58:49.456 +05:30 [INF] Now listening on: http://localhost:5133
+2026-04-09 11:58:49.520 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-09 11:58:49.521 +05:30 [INF] Hosting environment: Development
+2026-04-09 11:58:49.523 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-04-09 11:58:50.542 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-04-09 11:58:50.993 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 161.7416 ms
+2026-04-09 11:58:51.006 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 479.0959ms
+2026-04-09 11:58:51.133 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-09 11:58:51.133 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-04-09 11:58:51.146 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 13.5151ms
+2026-04-09 11:58:51.227 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.2679ms
+2026-04-09 11:58:51.316 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-04-09 11:58:51.352 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 17.0161 ms
+2026-04-09 11:58:51.360 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 44.2342ms
+2026-04-09 11:59:36.368 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/register - application/json 91
+2026-04-09 11:59:36.530 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 11:59:36.565 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentManagement.DTO.RegisterReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 11:59:39.249 +05:30 [INF] Executed DbCommand (82ms) [Parameters=[@__req_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @__req_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-04-09 11:59:40.206 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 255), @p2='?' (Size = 500), @p3='?' (DbType = DateTime2), @p4='?' (Size = 50), @p5='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Department], [Password], [RefreshToken], [RefreshTokenExpiry], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-04-09 11:59:40.257 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-04-09 11:59:40.269 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Register (StudentManagement) in 3690.5602ms
+2026-04-09 11:59:40.275 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Register (StudentManagement)'
+2026-04-09 11:59:40.280 +05:30 [INF] HTTP POST /auth/register responded 200 in 3903.8043 ms
+2026-04-09 11:59:40.299 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/register - 200 null text/plain; charset=utf-8 3931.3693ms
+2026-04-09 12:00:01.593 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/login - application/json 50
+2026-04-09 12:00:01.611 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-09 12:00:01.616 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagement.DTO.LoginReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 12:00:01.728 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Department], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0
+2026-04-09 12:00:02.260 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-09 12:00:02.269 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Login (StudentManagement) in 648.7857ms
+2026-04-09 12:00:02.276 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-09 12:00:02.280 +05:30 [INF] HTTP POST /auth/login responded 200 in 669.7390 ms
+2026-04-09 12:00:02.286 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/login - 200 null application/json; charset=utf-8 693.6808ms
+2026-04-09 12:00:51.839 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students/sorted - null null
+2026-04-09 12:00:51.970 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.GetSortedStudents (StudentManagement)'
+2026-04-09 12:00:51.977 +05:30 [INF] Route matched with {action = "GetSortedStudents", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetSortedStudents() on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-04-09 12:00:52.141 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[StudentID], [s].[City], [s].[CreatedDate], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+ORDER BY [s].[StudentName]
+2026-04-09 12:00:52.174 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagement.DTO.StudentResponse, StudentManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-09 12:00:52.183 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.GetSortedStudents (StudentManagement) in 198.6216ms
+2026-04-09 12:00:52.186 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.GetSortedStudents (StudentManagement)'
+2026-04-09 12:00:52.191 +05:30 [INF] HTTP GET /students/sorted responded 200 in 343.3451 ms
+2026-04-09 12:00:52.196 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students/sorted - 200 null application/json; charset=utf-8 357.5358ms
+2026-04-09 12:01:44.251 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students - null null
+2026-04-09 12:01:44.279 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.GetAll (StudentManagement)'
+2026-04-09 12:01:44.283 +05:30 [INF] Route matched with {action = "GetAll", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-04-09 12:01:44.313 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[StudentID], [s].[City], [s].[CreatedDate], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2026-04-09 12:01:44.320 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagement.Models.Student, StudentManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-09 12:01:44.347 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.GetAll (StudentManagement) in 56.8306ms
+2026-04-09 12:01:44.351 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.GetAll (StudentManagement)'
+2026-04-09 12:01:44.356 +05:30 [INF] HTTP GET /students responded 200 in 91.4014 ms
+2026-04-09 12:01:44.361 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students - 200 null application/json; charset=utf-8 110.4158ms
+2026-04-09 12:02:07.718 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5133/students/1 - application/json 45
+2026-04-09 12:02:07.741 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.Put (StudentManagement)'
+2026-04-09 12:02:07.748 +05:30 [INF] Route matched with {action = "Put", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Put(Int32, StudentManagement.DTO.StudentUpdateDto) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-04-09 12:02:07.856 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[StudentID], [s].[City], [s].[CreatedDate], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[StudentID] = @__p_0
+2026-04-09 12:02:07.926 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 100), @p1='?' (DbType = DateTime), @p2='?' (Size = 100) (DbType = AnsiString), @p3='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Students] SET [City] = @p0, [CreatedDate] = @p1, [Email] = @p2, [StudentName] = @p3
+OUTPUT 1
+WHERE [StudentID] = @p4;
+2026-04-09 12:02:07.943 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-04-09 12:02:07.945 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.Put (StudentManagement) in 187.6904ms
+2026-04-09 12:02:07.949 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.Put (StudentManagement)'
+2026-04-09 12:02:07.952 +05:30 [INF] HTTP PUT /students/1 responded 204 in 216.0427 ms
+2026-04-09 12:02:07.959 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5133/students/1 - 204 null null 241.7725ms
+2026-04-09 12:02:18.240 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students/sorted - null null
+2026-04-09 12:02:18.247 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.GetSortedStudents (StudentManagement)'
+2026-04-09 12:02:18.250 +05:30 [INF] Route matched with {action = "GetSortedStudents", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetSortedStudents() on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-04-09 12:02:18.265 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[StudentID], [s].[City], [s].[CreatedDate], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+ORDER BY [s].[StudentName]
+2026-04-09 12:02:18.275 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagement.DTO.StudentResponse, StudentManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-09 12:02:18.282 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.GetSortedStudents (StudentManagement) in 25.6892ms
+2026-04-09 12:02:18.287 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.GetSortedStudents (StudentManagement)'
+2026-04-09 12:02:18.291 +05:30 [INF] HTTP GET /students/sorted responded 200 in 44.5348 ms
+2026-04-09 12:02:18.299 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students/sorted - 200 null application/json; charset=utf-8 59.5902ms
+2026-04-09 12:09:19.558 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-09 12:09:20.001 +05:30 [INF] Now listening on: http://localhost:5133
+2026-04-09 12:09:20.162 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-09 12:09:20.164 +05:30 [INF] Hosting environment: Development
+2026-04-09 12:09:20.166 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-04-09 12:09:20.671 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-04-09 12:09:21.124 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 177.5991 ms
+2026-04-09 12:09:21.139 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 477.9148ms
+2026-04-09 12:09:21.220 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-04-09 12:09:21.223 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-09 12:09:21.258 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 35.7711ms
+2026-04-09 12:09:21.295 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 76.0905ms
+2026-04-09 12:09:21.372 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-04-09 12:09:21.394 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 14.3056 ms
+2026-04-09 12:09:21.398 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.0322ms
+2026-04-09 12:09:45.298 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/login - application/json 50
+2026-04-09 12:09:45.492 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-09 12:09:45.550 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagement.DTO.LoginReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 12:09:49.019 +05:30 [INF] Executed DbCommand (107ms) [Parameters=[@__user_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Department], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0
+2026-04-09 12:09:50.609 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Login (StudentManagement) in 5037.923ms
+2026-04-09 12:09:50.761 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-09 12:09:50.977 +05:30 [ERR] Exception occurred
+System.Exception: Invalid credentials
+   at StudentManagement.Services.AuthService.Login(LoginReqst user) in D:\DotNet_workspace\StudentManagement\StudentManagement\Services\AuthService.cs:line 54
+   at StudentManagement.Controllers.AuthController.Login(LoginReqst user) in D:\DotNet_workspace\StudentManagement\StudentManagement\Controllers\AuthController.cs:line 29
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StudentManagement.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in D:\DotNet_workspace\StudentManagement\StudentManagement\Middleware\ExceptionMiddleware.cs:line 22
+2026-04-09 12:09:51.063 +05:30 [ERR] HTTP POST /auth/login responded 500 in 5750.9283 ms
+2026-04-09 12:09:51.097 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/login - 500 null application/json 5800.055ms
+2026-04-09 12:10:03.159 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/login - application/json 50
+2026-04-09 12:10:03.170 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-09 12:10:03.174 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagement.DTO.LoginReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 12:10:03.234 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Department], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0
+2026-04-09 12:10:04.167 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Login (StudentManagement) in 985.8972ms
+2026-04-09 12:10:04.292 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-09 12:10:04.492 +05:30 [ERR] Exception occurred
+System.Exception: Invalid credentials
+   at StudentManagement.Services.AuthService.Login(LoginReqst user) in D:\DotNet_workspace\StudentManagement\StudentManagement\Services\AuthService.cs:line 54
+   at StudentManagement.Controllers.AuthController.Login(LoginReqst user) in D:\DotNet_workspace\StudentManagement\StudentManagement\Controllers\AuthController.cs:line 29
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StudentManagement.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in D:\DotNet_workspace\StudentManagement\StudentManagement\Middleware\ExceptionMiddleware.cs:line 22
+2026-04-09 12:10:04.516 +05:30 [ERR] HTTP POST /auth/login responded 500 in 1349.0253 ms
+2026-04-09 12:10:04.527 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/login - 500 null application/json 1368.0936ms
+2026-04-09 12:10:11.200 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/login - application/json 50
+2026-04-09 12:10:11.216 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-09 12:10:11.222 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagement.DTO.LoginReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 12:10:11.410 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Department], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0
+2026-04-09 12:10:11.919 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-09 12:10:11.933 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Login (StudentManagement) in 704.2244ms
+2026-04-09 12:10:11.939 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-09 12:10:11.943 +05:30 [INF] HTTP POST /auth/login responded 200 in 732.0931 ms
+2026-04-09 12:10:11.953 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/login - 200 null application/json; charset=utf-8 753.3079ms
+2026-04-09 12:11:13.544 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/students/assign-course?studentId=9&courseId=5 - null 0
+2026-04-09 12:11:13.701 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.AssignCourse (StudentManagement)'
+2026-04-09 12:11:13.712 +05:30 [INF] Route matched with {action = "AssignCourse", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AssignCourse(Int32, Int32) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-04-09 12:11:13.805 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE [s].[StudentID] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-04-09 12:11:14.119 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.AssignCourse (StudentManagement) in 398.455ms
+2026-04-09 12:11:14.244 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.AssignCourse (StudentManagement)'
+2026-04-09 12:11:14.432 +05:30 [ERR] Exception occurred
+StudentManagement.Exceptions.StudentNotFoundException: Student with id 9 not found
+   at StudentManagement.Services.StudentService.AssignCourse(Int32 studentId, Int32 courseId) in D:\DotNet_workspace\StudentManagement\StudentManagement\Services\StudentService.cs:line 73
+   at StudentManagement.Controllers.StudentsController.AssignCourse(Int32 studentId, Int32 courseId) in D:\DotNet_workspace\StudentManagement\StudentManagement\Controllers\StudentsController.cs:line 66
+   at lambda_method49(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StudentManagement.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in D:\DotNet_workspace\StudentManagement\StudentManagement\Middleware\ExceptionMiddleware.cs:line 22
+2026-04-09 12:11:14.452 +05:30 [INF] HTTP POST /students/assign-course responded 404 in 883.2360 ms
+2026-04-09 12:11:14.456 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/students/assign-course?studentId=9&courseId=5 - 404 null application/json 912.1048ms
+2026-04-09 12:11:26.261 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/students/assign-course?studentId=7&courseId=5 - null 0
+2026-04-09 12:11:26.274 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.AssignCourse (StudentManagement)'
+2026-04-09 12:11:26.278 +05:30 [INF] Route matched with {action = "AssignCourse", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AssignCourse(Int32, Int32) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-04-09 12:11:26.293 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE [s].[StudentID] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-04-09 12:11:26.344 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__studentId_0='?' (DbType = Int32), @__courseId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Enrollment] AS [e]
+        WHERE [e].[StudentID] = @__studentId_0 AND [e].[CourseID] = @__courseId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-04-09 12:11:26.621 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.AssignCourse (StudentManagement) in 334.3465ms
+2026-04-09 12:11:26.748 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.AssignCourse (StudentManagement)'
+2026-04-09 12:11:26.950 +05:30 [ERR] Exception occurred
+StudentManagement.Exceptions.DuplicateStudentException: Student with id 7 already exists
+   at StudentManagement.Services.StudentService.AssignCourse(Int32 studentId, Int32 courseId) in D:\DotNet_workspace\StudentManagement\StudentManagement\Services\StudentService.cs:line 76
+   at StudentManagement.Controllers.StudentsController.AssignCourse(Int32 studentId, Int32 courseId) in D:\DotNet_workspace\StudentManagement\StudentManagement\Controllers\StudentsController.cs:line 66
+   at lambda_method49(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StudentManagement.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in D:\DotNet_workspace\StudentManagement\StudentManagement\Middleware\ExceptionMiddleware.cs:line 22
+2026-04-09 12:11:26.972 +05:30 [ERR] HTTP POST /students/assign-course responded 500 in 702.8808 ms
+2026-04-09 12:11:26.980 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/students/assign-course?studentId=7&courseId=5 - 500 null application/json 719.0378ms
+2026-04-09 12:13:21.709 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-09 12:13:22.096 +05:30 [INF] Now listening on: http://localhost:5133
+2026-04-09 12:13:22.223 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-09 12:13:22.225 +05:30 [INF] Hosting environment: Development
+2026-04-09 12:13:22.230 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-04-09 12:13:22.766 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-04-09 12:13:23.217 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 165.3831 ms
+2026-04-09 12:13:23.232 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 478.1636ms
+2026-04-09 12:13:23.283 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-09 12:13:23.290 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-04-09 12:13:23.296 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 13.079ms
+2026-04-09 12:13:23.352 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.3052ms
+2026-04-09 12:13:23.444 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-04-09 12:13:23.465 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 12.5325 ms
+2026-04-09 12:13:23.471 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.5985ms
+2026-04-09 12:16:59.745 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-09 12:17:00.041 +05:30 [INF] Now listening on: http://localhost:5133
+2026-04-09 12:17:00.172 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-09 12:17:00.176 +05:30 [INF] Hosting environment: Development
+2026-04-09 12:17:00.180 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-04-09 12:17:00.833 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-04-09 12:17:01.272 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 170.2610 ms
+2026-04-09 12:17:01.292 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 471.435ms
+2026-04-09 12:17:01.339 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-09 12:17:01.340 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-04-09 12:17:01.349 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 9.912ms
+2026-04-09 12:17:01.398 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.0253ms
+2026-04-09 12:17:01.501 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-04-09 12:17:01.524 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 15.2036 ms
+2026-04-09 12:17:01.531 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.7962ms
+2026-04-09 12:17:21.790 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-09 12:17:22.065 +05:30 [INF] Now listening on: http://localhost:5133
+2026-04-09 12:17:22.367 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-09 12:17:22.370 +05:30 [INF] Hosting environment: Development
+2026-04-09 12:17:22.373 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-04-09 12:17:22.794 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-04-09 12:17:23.235 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 166.8882 ms
+2026-04-09 12:17:23.252 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 466.3027ms
+2026-04-09 12:17:23.325 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-09 12:17:23.325 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-04-09 12:17:23.347 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 22.9865ms
+2026-04-09 12:17:23.426 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.5446ms
+2026-04-09 12:17:23.506 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-04-09 12:17:23.528 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 14.5601 ms
+2026-04-09 12:17:23.534 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.4788ms
+2026-04-09 12:17:47.074 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/login - application/json 50
+2026-04-09 12:17:47.258 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-09 12:17:47.307 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagement.DTO.LoginReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-09 12:17:50.582 +05:30 [INF] Executed DbCommand (88ms) [Parameters=[@__user_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Department], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0
+2026-04-09 12:17:51.825 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-09 12:17:51.849 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Login (StudentManagement) in 4524.9314ms
+2026-04-09 12:17:51.856 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-09 12:17:51.862 +05:30 [INF] HTTP POST /auth/login responded 200 in 4769.6659 ms
+2026-04-09 12:17:51.891 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/login - 200 null application/json; charset=utf-8 4822.368ms
+2026-04-09 12:18:41.167 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/students/assign-course?studentId=6&courseId=3 - null 0
+2026-04-09 12:18:41.290 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.AssignCourse (StudentManagement)'
+2026-04-09 12:18:41.302 +05:30 [INF] Route matched with {action = "AssignCourse", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AssignCourse(Int32, Int32) on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-04-09 12:18:41.427 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE [s].[StudentID] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-04-09 12:18:41.469 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__studentId_0='?' (DbType = Int32), @__courseId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Enrollment] AS [e]
+        WHERE [e].[StudentID] = @__studentId_0 AND [e].[CourseID] = @__courseId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-04-09 12:18:41.486 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__studentId_0='?' (DbType = Int32), @__courseId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Enrollment] AS [e]
+        WHERE [e].[StudentID] = @__studentId_0 AND [e].[CourseID] = @__courseId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-04-09 12:18:41.787 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Enrollment] ([CourseID], [StudentID])
+OUTPUT INSERTED.[EnrollmentID], INSERTED.[EnrollDate]
+VALUES (@p0, @p1);
+2026-04-09 12:18:41.851 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-09 12:18:41.861 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.AssignCourse (StudentManagement) in 549.4428ms
+2026-04-09 12:18:41.868 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.AssignCourse (StudentManagement)'
+2026-04-09 12:18:41.873 +05:30 [INF] HTTP POST /students/assign-course responded 200 in 697.6721 ms
+2026-04-09 12:18:41.882 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/students/assign-course?studentId=6&courseId=3 - 200 null application/json; charset=utf-8 714.9513ms

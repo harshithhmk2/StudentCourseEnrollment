@@ -1,0 +1,80 @@
+2026-04-10 11:16:37.033 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-10 11:16:37.563 +05:30 [INF] Now listening on: http://localhost:5133
+2026-04-10 11:16:37.648 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-10 11:16:37.650 +05:30 [INF] Hosting environment: Development
+2026-04-10 11:16:37.654 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-04-10 11:16:42.121 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-04-10 11:16:42.839 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 214.4206 ms
+2026-04-10 11:16:42.857 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 750.9415ms
+2026-04-10 11:16:42.925 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-10 11:16:42.926 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-04-10 11:16:42.937 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 13.8354ms
+2026-04-10 11:16:43.082 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 156.1802ms
+2026-04-10 11:16:43.219 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-04-10 11:16:43.781 +05:30 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 551.2505 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET students" for actions - StudentManagement.Controllers.StudentsController.GetAll (StudentManagement),StudentManagement.Controllers.StudentsController.GetCourses (StudentManagement). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-04-10 11:16:43.882 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET students" for actions - StudentManagement.Controllers.StudentsController.GetAll (StudentManagement),StudentManagement.Controllers.StudentsController.GetCourses (StudentManagement). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-10 11:16:43.898 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 678.9992ms
+2026-04-10 11:18:24.180 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-10 11:18:24.726 +05:30 [INF] Now listening on: http://localhost:5133
+2026-04-10 11:18:24.879 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-10 11:18:24.881 +05:30 [INF] Hosting environment: Development
+2026-04-10 11:18:24.884 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-04-10 11:18:25.746 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-04-10 11:18:26.324 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 208.6060 ms
+2026-04-10 11:18:26.340 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 617.4671ms
+2026-04-10 11:18:26.437 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-10 11:18:26.438 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-04-10 11:18:26.471 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 34.4257ms
+2026-04-10 11:18:26.601 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 162.6608ms
+2026-04-10 11:18:26.724 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-04-10 11:18:26.777 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 21.3490 ms
+2026-04-10 11:18:26.790 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 65.7085ms
+2026-04-10 11:18:54.624 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5133/auth/login - application/json 50
+2026-04-10 11:18:54.851 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-10 11:18:54.928 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagement.DTO.LoginReqst) on controller StudentManagement.Controllers.AuthController (StudentManagement).
+2026-04-10 11:18:59.309 +05:30 [INF] Executed DbCommand (121ms) [Parameters=[@__user_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Department], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0
+2026-04-10 11:19:00.511 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-10 11:19:00.537 +05:30 [INF] Executed action StudentManagement.Controllers.AuthController.Login (StudentManagement) in 5592.5348ms
+2026-04-10 11:19:00.544 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.AuthController.Login (StudentManagement)'
+2026-04-10 11:19:00.552 +05:30 [INF] HTTP POST /auth/login responded 200 in 5919.7627 ms
+2026-04-10 11:19:00.592 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5133/auth/login - 200 null application/json; charset=utf-8 5968.893ms
+2026-04-10 11:19:23.347 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students/Courses - null null
+2026-04-10 11:19:23.512 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.GetCourses (StudentManagement)'
+2026-04-10 11:19:23.521 +05:30 [INF] Route matched with {action = "GetCourses", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCourses() on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-04-10 11:19:23.601 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CourseID], [c].[CourseName], [c].[Credits]
+FROM [Courses] AS [c]
+2026-04-10 11:19:23.657 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagement.Models.Course, StudentManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-10 11:19:23.680 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.GetCourses (StudentManagement) in 153.4578ms
+2026-04-10 11:19:23.684 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.GetCourses (StudentManagement)'
+2026-04-10 11:19:23.688 +05:30 [INF] HTTP GET /students/Courses responded 200 in 319.4063 ms
+2026-04-10 11:19:23.697 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students/Courses - 200 null application/json; charset=utf-8 353.3021ms
+2026-04-10 11:21:32.741 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students/Courses - null null
+2026-04-10 11:21:32.772 +05:30 [INF] Executing endpoint 'StudentManagement.Controllers.StudentsController.GetCourses (StudentManagement)'
+2026-04-10 11:21:32.789 +05:30 [INF] Route matched with {action = "GetCourses", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCourses() on controller StudentManagement.Controllers.StudentsController (StudentManagement).
+2026-04-10 11:21:32.955 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CourseID], [c].[CourseName], [c].[Credits]
+FROM [Courses] AS [c]
+2026-04-10 11:21:32.962 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagement.Models.Course, StudentManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-10 11:21:32.968 +05:30 [INF] Executed action StudentManagement.Controllers.StudentsController.GetCourses (StudentManagement) in 168.9754ms
+2026-04-10 11:21:32.973 +05:30 [INF] Executed endpoint 'StudentManagement.Controllers.StudentsController.GetCourses (StudentManagement)'
+2026-04-10 11:21:32.976 +05:30 [INF] HTTP GET /students/Courses responded 200 in 214.2884 ms
+2026-04-10 11:21:32.982 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students/Courses - 200 null application/json; charset=utf-8 240.5215ms

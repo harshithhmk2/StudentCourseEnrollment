@@ -1,0 +1,34 @@
+2026-04-08 12:34:41.045 +05:30 [INF] User profile is available. Using 'C:\Users\Harshith\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-08 12:34:41.583 +05:30 [INF] Now listening on: http://localhost:5133
+2026-04-08 12:34:41.860 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-08 12:34:41.862 +05:30 [INF] Hosting environment: Development
+2026-04-08 12:34:41.864 +05:30 [INF] Content root path: D:\DotNet_workspace\StudentManagement\StudentManagement
+2026-04-08 12:34:52.865 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/index.html - null null
+2026-04-08 12:34:53.454 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 188.6298 ms
+2026-04-08 12:34:53.465 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/index.html - 200 null text/html;charset=utf-8 621.067ms
+2026-04-08 12:34:53.514 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_vs/browserLink - null null
+2026-04-08 12:34:53.514 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-08 12:34:53.567 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 40.9591ms
+2026-04-08 12:34:53.717 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/_vs/browserLink - 200 null text/javascript; charset=UTF-8 203.2466ms
+2026-04-08 12:34:53.997 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - null null
+2026-04-08 12:34:54.029 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 25.6285 ms
+2026-04-08 12:34:54.042 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 45.0641ms
+2026-04-08 12:34:55.424 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/ - null null
+2026-04-08 12:34:55.602 +05:30 [INF] HTTP GET / responded 404 in 164.1862 ms
+2026-04-08 12:34:55.610 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/ - 404 0 null 186.2899ms
+2026-04-08 12:34:55.629 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5133/, Response status code: 404
+2026-04-08 12:35:14.753 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5133/students - null null
+2026-04-08 12:35:14.794 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+ClaimsAuthorizationRequirement:Claim.Type=Department and Claim.Value is one of the following values: (IT)
+2026-04-08 12:35:14.816 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-04-08 12:35:14.825 +05:30 [INF] HTTP GET /students responded 401 in 60.9420 ms
+2026-04-08 12:35:14.834 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5133/students - 401 0 null 81.7593ms
+2026-04-08 14:47:21.434 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-08 14:47:21.509 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-08 14:47:21.545 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
